@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1330416014 source:/home/reannz/Code/BTP/main.c
+	<stdio.h>
+	<stdlib.h>
+
