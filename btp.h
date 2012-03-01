@@ -20,3 +20,5 @@ typedef struct _BTP_FILE_HEADER {
     long long ibc; // index of the chunk loaded in the check buffer
     BTP_CHUNK_HEADER* pbc; // chunk header for the check buffer
 } BTP_FILE_HEADER;
+
+BTP_FILE_HEADER* btp_load_file(char* filename);

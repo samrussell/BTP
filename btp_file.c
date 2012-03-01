@@ -7,10 +7,19 @@ BTP_FILE_HEADER* btp_load_file(char* filename){
     FILE* hFile=NULL;
     long long size=0;
 
-    hFile = fopen(filename, "r");
-    if(!hFile) return NULL;
+    hFile = fopen64(filename, "r");
+    if(!hFile)return NULL;
     // get size
-    fseek(hFile, 0, SEEK_END);
+    long long seek=0;
+    fseeko64(hFile, 0, SEEK_END);
+    printf("Getting size\n");
     size=ftello64(hFile);
-    printf("size: %L\n", size);
+    printf("Got size\n");
+    printf("size: %d\n", ftello64(hFile));
+    printf("Printed\n");
+    BTP_FILE_HEADER* pBFH = calloc(1, sizeof(BTP_FILE_HEADER));
+    pBFH->size = size;
+    pBFH->hFile=hFile;
+    pBFH->nChunks=size/32768000 + 1;
+    return pBFH;
 }

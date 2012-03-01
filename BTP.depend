@@ -1,5 +1,12 @@
 # depslib dependency file v1.0
-1330416014 source:/home/reannz/Code/BTP/main.c
+1330573685 source:/home/reannz/Code/BTP/main.c
 	<stdio.h>
 	<stdlib.h>
+
+1330574155 source:/home/reannz/Code/BTP/btp_file.c
+	<stdlib.h>
+	<stdio.h>
+	"btp.h"
+
+1330541601 /home/reannz/Code/BTP/btp.h
 
