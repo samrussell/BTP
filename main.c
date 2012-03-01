@@ -4,7 +4,7 @@
 int test(){
 
     // test 1: load file
-    btp_load_file("../../xen-guest.img");
+    if(btp_load_file("../../test8g.img")) return 1;
     return 0;
 }
 
