@@ -10,17 +10,24 @@
 
 1330541601 /home/reannz/Code/BTP/btp.h
 
-1330587310 source:/home/gary/Code/BTP/btp_file.c
+1330852992 source:/home/gary/Code/BTP/btp_file.c
 	<sys/types.h>
 	<unistd.h>
-	<stdlib.h>
+	<stdint.h>
 	<stdio.h>
+	<stdlib.h>
+	<memory.h>
 	<errno.h>
 	"btp.h"
 
-1330587343 /home/gary/Code/BTP/btp.h
+1330852229 /home/gary/Code/BTP/btp.h
 
 1330586977 source:/home/gary/Code/BTP/main.c
 	<stdio.h>
 	<stdlib.h>
+
+1330851401 source:/home/gary/Code/BTP/crc32.c
+	<sys/types.h>
+	<unistd.h>
+	<stdint.h>
 
